@@ -14,9 +14,14 @@ Projeto de portfolio para recomendacao de produtos com feedback implicito e simi
 - `models/model_info.json`
 - `models/metrics.json`
 - `notebooks/analysis_notes.md`
+- `reports/event_distribution.png`
+- `reports/rank_coverage.png`
+- `reports/top_recommended_items.png`
 
 ## Resultados atuais
+- Modelo selecionado: **item_item_cosine**
 - HitRate@10: **0.1333**
+- MRR@10: **0.0531**
 - Usuarios avaliados: **450**
 
 ## Instalacao minima

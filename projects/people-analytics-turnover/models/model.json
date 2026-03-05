@@ -1,5 +1,5 @@
 {
-  "model_type": "logistic_regression_numpy",
+  "model_type": "logistic_regression",
   "columns": [
     "tenure_months",
     "salary_market_ratio",
@@ -45,5 +45,6 @@
     -0.03390537438568128
   ],
   "bias": -0.12773413790826219,
+  "xgboost_params": null,
   "threshold": 0.58
 }

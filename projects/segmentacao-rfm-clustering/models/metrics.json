@@ -1,8 +1,29 @@
 {
-  "k": 5,
-  "n_customers": 1592,
-  "largest_segment_persona": "Potential",
-  "largest_segment_customers": 664,
-  "champions_customers": 124,
-  "hibernating_customers": 45
+  "selected_k": 4,
+  "silhouette": 0.4061,
+  "inertia": 1260.1323,
+  "customers_segmented": 1592,
+  "largest_segment": {
+    "persona": "Loyal",
+    "customers": 778
+  },
+  "champions_customers": 238,
+  "k_candidates": [
+    {
+      "k": 4,
+      "silhouette": 0.4061,
+      "inertia": 1260.1323
+    },
+    {
+      "k": 5,
+      "silhouette": 0.3781,
+      "inertia": 995.4341
+    },
+    {
+      "k": 6,
+      "silhouette": 0.3638,
+      "inertia": 824.1523
+    }
+  ],
+  "reports_generated": 3
 }

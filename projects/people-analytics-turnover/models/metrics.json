@@ -4,5 +4,18 @@
   "precision": 0.1644,
   "recall": 0.4211,
   "f1": 0.2365,
-  "selected_threshold": 0.58
+  "confusion_matrix": {
+    "tp": 24,
+    "tn": 571,
+    "fp": 122,
+    "fn": 33
+  },
+  "selected_threshold": 0.58,
+  "val_f1_best": 0.2463,
+  "selected_model": "logistic_regression",
+  "val_auc_logreg": 0.6495,
+  "val_auc_xgboost": null,
+  "used_optuna": false,
+  "xgboost_available": false,
+  "reports_generated": 3
 }

@@ -15,8 +15,12 @@ Projeto de portfolio para prever turnover de colaboradores e apoiar acoes de ret
 - `models/model.json`
 - `models/metrics.json`
 - `notebooks/analysis_notes.md`
+- `reports/score_distribution.png`
+- `reports/confusion_matrix.png`
+- `reports/feature_importance.png`
 
 ## Resultados atuais
+- Modelo selecionado: **logistic_regression**
 - ROC-AUC teste: **0.6355**
 - F1 teste: **0.2365**
 - Recall teste: **0.4211**

@@ -1,7 +1,8 @@
 # Segmentacao RFM - Analysis Notes
 
-- Potential: 664 clientes
-- Loyal: 477 clientes
-- At Risk: 282 clientes
-- Champions: 124 clientes
-- Hibernating: 45 clientes
+- K selecionado: 4
+- Silhouette: 0.4061
+- Clientes segmentados: 1592
+- Maior segmento: Loyal (778 clientes)
+- Champions: 238 clientes
+- Graficos em reports/: cluster_sizes.png, frequency_monetary_scatter.png, k_selection_silhouette.png

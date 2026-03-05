@@ -16,12 +16,16 @@ Projeto de portfolio para segmentacao de clientes via RFM e clustering k-means e
 - `models/model_info.json`
 - `models/metrics.json`
 - `notebooks/analysis_notes.md`
+- `reports/cluster_sizes.png`
+- `reports/frequency_monetary_scatter.png`
+- `reports/k_selection_silhouette.png`
 
 ## Resultados atuais
-- Numero de clusters: **5**
+- Numero de clusters: **4**
 - Clientes segmentados: **1592**
-- Maior segmento: **Potential (664 clientes)**
-- Segmento Champions: **124 clientes**
+- Maior segmento: **Loyal (778 clientes)**
+- Segmento Champions: **238 clientes**
+- Silhouette: **0.4061**
 
 ## Instalacao minima
 ```bash

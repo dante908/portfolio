@@ -15,12 +15,16 @@ Projeto de portfolio para deteccao de fraude em pagamentos RTR com score de risc
 - `models/model_info.json`
 - `models/metrics.json`
 - `notebooks/analysis_notes.md`
+- `reports/score_distribution.png`
+- `reports/confusion_matrix.png`
+- `reports/feature_importance.png`
 
 ## Resultados atuais
-- ROC-AUC teste: **0.7083**
-- F1 teste: **0.3427**
-- Recall teste: **0.5455**
-- Threshold selecionado: **0.25**
+- Modelo selecionado: **rule_based**
+- ROC-AUC teste: **0.7054**
+- F1 teste: **0.3201**
+- Recall teste: **0.3869**
+- Threshold selecionado: **0.27**
 
 ## Instalacao minima
 ```bash

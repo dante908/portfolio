@@ -1,6 +1,7 @@
 {
-  "model": "rule_based_risk_scoring",
-  "selected_threshold": 0.25,
+  "model": "rule_based",
+  "selected_threshold": 0.27,
+  "xgboost_params": null,
   "features": [
     "amount",
     "hour",
@@ -8,6 +9,8 @@
     "device_risk",
     "merchant_risk",
     "is_international",
-    "card_age_days"
+    "card_age_days",
+    "chargeback_history",
+    "amount_over_1k"
   ]
 }
