@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local virtual envs
+.venv/
+
+# Local experiment artifacts
+mlruns/
+
+# Matplotlib cache temp dirs
+.mpl-cache/

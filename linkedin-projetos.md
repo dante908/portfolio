@@ -6,56 +6,56 @@ LinkedIn: https://www.linkedin.com/in/felipe-gabriel-coelho-de-santana-a33b49304
 Contato: fe.santanaclh7o@gmail.com
 
 ## 1. Forecast de Demanda Omnichannel
-Desenvolvi um modelo de previsão de demanda por SKU-loja para uma operação de varejo com forte sazonalidade. Estruturei pipeline semanal com variáveis de promoção, calendário e clima, além de tuning com Optuna e validação rolling-window.
+Desenvolvi um pipeline de previsao de demanda por canal e SKU com backtest dos ultimos 30 dias por serie. O projeto gera base estruturada, executa previsao temporal e salva metricas de avaliacao.
 
-**Impacto:** redução de erro (MAPE) de 18,4% para 14,2% e melhoria na cobertura de estoque em categorias críticas.
+**Foco tecnico:** previsao temporal e avaliacao com MAPE.
 
-**Stack:** Python, XGBoost, Optuna, Airflow.
+**Stack:** Python, NumPy, Pandas.
 
 **Hashtags:** #DataScience #Forecasting #MachineLearning #RetailAnalytics
 
 ## 2. Predição de Churn em SaaS B2B
-Criei um score de churn para contas B2B, combinando dados de uso do produto, tickets de suporte e NPS. Usei SHAP para explicar os principais fatores de risco e apoiar a priorização do time de Customer Success.
+Criei um score de churn para contas B2B com baseline de classificacao e comparacao entre abordagem estatistica e regra de negocio.
 
-**Impacto:** aumento de retenção em 18% ao longo de 2 trimestres.
+**Foco tecnico:** classificacao de risco e priorizacao de contas.
 
-**Stack:** SQL, Scikit-learn, SHAP, Power BI.
+**Stack:** Python, NumPy, Pandas.
 
 **Hashtags:** #Churn #CustomerSuccess #Analytics #DataDriven
 
 ## 3. Detecção de Fraude em Pagamentos
-Implementei um motor de risco híbrido (regras + LightGBM) para classificação de transações em tempo quase real. O foco foi reduzir falsos positivos sem perder sensibilidade para fraudes novas.
+Implementei um motor de risco para pagamentos com score por regra de negocio e ajuste de threshold por F1 em validacao.
 
-**Impacto:** redução de 31% em falsos positivos e latência de inferência abaixo de 250ms.
+**Foco tecnico:** equilibrio entre deteccao de fraude e falsos positivos.
 
-**Stack:** Python, LightGBM, FastAPI, Redis, Docker.
+**Stack:** Python, NumPy, Pandas.
 
 **Hashtags:** #FraudDetection #Fintech #MLOps #RealTimeAnalytics
 
 ## 4. Segmentação de Clientes com RFM + Clustering
-Modelei uma segmentação de clientes para campanhas de CRM, usando RFM e clustering para identificar grupos de alto potencial, risco de inatividade e oportunidades de cross-sell.
+Modelei segmentacao de clientes com RFM + K-Means para apoiar campanhas e priorizacao de relacionamento.
 
-**Impacto:** aumento de 26% no CTR das campanhas segmentadas.
+**Foco tecnico:** segmentacao de clientes para CRM.
 
-**Stack:** Python, Pandas, Scikit-learn, Tableau.
+**Stack:** Python, NumPy, Pandas.
 
 **Hashtags:** #CRM #CustomerAnalytics #Segmentation #DataScience
 
 ## 5. Recomendação de Produtos no E-commerce
-Construí um sistema de recomendação híbrido para vitrine e carrinho, incluindo avaliação offline e framework de experimento A/B para medir uplift de conversão.
+Construi recomendador item-item com similaridade cosseno e avaliacao offline via HitRate@10.
 
-**Impacto:** aumento de 11% na taxa de conversão e crescimento de ticket médio em segmentos-alvo.
+**Foco tecnico:** recomendacao com feedback implicito (view, cart, purchase).
 
-**Stack:** Python, Implicit ALS, MLflow, Feature Store.
+**Stack:** Python, NumPy, Pandas.
 
 **Hashtags:** #RecommenderSystems #Ecommerce #MachineLearning #Experimentation
 
 ## 6. People Analytics: Risco de Turnover
-Desenvolvi um modelo de risco de turnover voluntário com explicabilidade para apoiar ações preventivas de RH e gestão de pessoas.
+Desenvolvi predicao de risco de turnover com regressao logistica em NumPy e threshold ajustado por validacao.
 
-**Impacto:** redução do turnover anual de 17% para 13,8%.
+**Foco tecnico:** identificacao de risco para apoiar acoes de retencao em RH.
 
-**Stack:** Python, CatBoost, SHAP, Streamlit.
+**Stack:** Python, NumPy, Pandas.
 
 **Hashtags:** #PeopleAnalytics #HRAnalytics #PredictiveModeling #DataScience
 

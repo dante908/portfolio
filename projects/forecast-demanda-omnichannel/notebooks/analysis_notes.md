@@ -1,5 +1,9 @@
 # Forecast Demanda Omnichannel - Analysis Notes
 
-- MAE geral: 10.3919
-- MAPE geral: 7.7737%
-- Backtest realizado nos ultimos 30 dias por serie channel+sku.
+- Backend: ridge_numpy
+- Optuna usado: False
+- MAPE validacao (modelo): 6.0631%
+- MAPE teste (modelo): 5.9667%
+- MAPE teste (baseline lag7): 9.0547%
+- Relatorios visuais: daily_actual_vs_forecast.png, abs_error_distribution.png, top_series_actual_demand.png
+- Pipeline preparado para execucao semanal e comparacao com baseline.
