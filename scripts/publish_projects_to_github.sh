@@ -35,29 +35,35 @@ publish_project() {
     "$project_dir/" "$tmp_dir/$project/"
 
   (
+    set -e
     cd "$tmp_dir/$project"
     git init -q
     git add .
     git commit -q -m "Initial project commit"
     git branch -M main
     git remote add origin "$repo_url"
-    git push -u origin main
-  )
+    # Force sync because remotes may already have unrelated history.
+    git push -u -f origin main
+  ) || {
+    rm -rf "$tmp_dir"
+    return 1
+  }
 
   rm -rf "$tmp_dir"
+  return 0
 }
 
 missing_count=0
-for project in "${PROJECTS[@]}"; do
-  if check_repo_exists "$project"; then
-    echo "[ok] repo exists: ${GITHUB_USER}/${project}"
-  else
-    echo "[missing] repo not found: ${GITHUB_USER}/${project}"
-    missing_count=$((missing_count + 1))
-  fi
-done
-
 if [[ "$MODE" == "check" ]]; then
+  for project in "${PROJECTS[@]}"; do
+    if check_repo_exists "$project"; then
+      echo "[ok] repo exists: ${GITHUB_USER}/${project}"
+    else
+      echo "[missing] repo not found: ${GITHUB_USER}/${project}"
+      missing_count=$((missing_count + 1))
+    fi
+  done
+
   if [[ $missing_count -gt 0 ]]; then
     echo ""
     echo "Create the missing repositories on GitHub first, then run:"
@@ -73,14 +79,13 @@ if [[ "$MODE" != "push" ]]; then
   exit 1
 fi
 
-if [[ $missing_count -gt 0 ]]; then
-  echo "Cannot push: there are missing repositories."
-  exit 1
-fi
-
 for project in "${PROJECTS[@]}"; do
   echo "Publishing ${project}..."
-  publish_project "$project"
+  if publish_project "$project"; then
+    echo "[ok] published ${project}"
+  else
+    echo "[error] failed ${project}"
+  fi
 done
 
 echo "All projects published."

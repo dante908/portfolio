@@ -1,11 +1,12 @@
 SHELL := /bin/zsh
-.PHONY: bootstrap run-all validate quality test log-experiments serve-api package-all publish-check publish-projects clean
+.PHONY: bootstrap run-all validate quality test log-experiments serve-api package-all publish-check publish-projects tag-projects clean
 
 PYTHON ?= python3
 ROOT := $(CURDIR)
 SCRIPT := scripts/run_all_projects.sh
 PACKAGE_SCRIPT := scripts/package_projects.sh
 PUBLISH_SCRIPT := scripts/publish_projects_to_github.sh
+TAG_SCRIPT := scripts/tag_project_releases.sh
 
 bootstrap:
 	@chmod +x $(SCRIPT)
@@ -40,6 +41,10 @@ publish-check: bootstrap
 publish-projects: bootstrap
 	@chmod +x $(PUBLISH_SCRIPT)
 	@GITHUB_USER=dante908 $(PUBLISH_SCRIPT) push
+
+tag-projects: bootstrap
+	@chmod +x $(TAG_SCRIPT)
+	@GITHUB_USER=dante908 TAG_NAME=v1.0.0 $(TAG_SCRIPT)
 
 clean:
 	@find projects -type d -name "__pycache__" -prune -exec rm -rf {} +
