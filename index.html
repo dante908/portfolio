@@ -73,11 +73,11 @@
         <article class="project-card">
           <h3>Forecast de Demanda Omnichannel</h3>
           <p>
-            Pipeline de previsao de demanda por canal e SKU com backtest dos ultimos 30 dias por serie.
+            Pipeline de previsao de demanda por canal e SKU com backtest temporal e comparacao com baseline.
           </p>
           <ul>
             <li>Dados: historico diario de demanda, preco e promocao por canal+SKU</li>
-            <li>Stack: Python, XGBoost, Optuna e Airflow (com fallback local)</li>
+            <li>Stack: Python, NumPy, Pandas e Matplotlib</li>
             <li>Foco: previsao de demanda por serie temporal e avaliacao com MAPE</li>
             <li>Resultado atual: MAPE teste 5.97% (baseline lag7: 9.05%)</li>
           </ul>
@@ -94,9 +94,9 @@
           </p>
           <ul>
             <li>Dados: fee mensal, seats, tenure, tickets, login, NPS e pagamentos</li>
-            <li>Stack: Python, XGBoost, Optuna e visualizacao de churn</li>
+            <li>Stack: Python, NumPy, Pandas, XGBoost e Optuna</li>
             <li>Foco: classificacao de risco de churn com threshold tuning</li>
-            <li>Resultado atual: ROC-AUC 0.704 e F1 0.6688</li>
+            <li>Resultado atual: ROC-AUC 0.704, F1 0.6688 e threshold 0.37</li>
           </ul>
           <p class="project-links">
             <a href="https://github.com/dante908/churn-saas-b2b" target="_blank" rel="noopener noreferrer">Ver no
@@ -111,8 +111,9 @@
           </p>
           <ul>
             <li>Dados: valor, hora, velocity, risco de device/merchant e historico de chargeback</li>
-            <li>Stack: Python, NumPy e Pandas</li>
+            <li>Stack: Python, NumPy, Pandas e Matplotlib</li>
             <li>Foco: equilibrio entre deteccao de fraude e falsos positivos</li>
+            <li>Resultado atual: ROC-AUC 0.7054, F1 0.3201 e recall 0.3869</li>
           </ul>
           <p class="project-links">
             <a href="https://github.com/dante908/fraude-pagamentos-rtr" target="_blank" rel="noopener noreferrer">Ver no
@@ -127,8 +128,9 @@
           </p>
           <ul>
             <li>Dados: histórico de compras, ticket e recência</li>
-            <li>Stack: Python, NumPy e Pandas</li>
+            <li>Stack: Python, NumPy, Pandas e Matplotlib</li>
             <li>Foco: segmentacao de clientes para acoes de CRM</li>
+            <li>Resultado atual: K=4, silhouette 0.4061 e 1592 clientes segmentados</li>
           </ul>
           <p class="project-links">
             <a href="https://github.com/dante908/segmentacao-rfm-clustering" target="_blank"
@@ -143,8 +145,9 @@
           </p>
           <ul>
             <li>Dados: interacoes implicitas (view, cart, purchase) por usuario e item</li>
-            <li>Stack: Python, NumPy e Pandas</li>
+            <li>Stack: Python, NumPy, Pandas e Matplotlib</li>
             <li>Foco: recomendacao de produtos com avaliacao offline</li>
+            <li>Resultado atual: HitRate@10 0.1333 e MRR@10 0.0531</li>
           </ul>
           <p class="project-links">
             <a href="https://github.com/dante908/recomendacao-ecommerce" target="_blank" rel="noopener noreferrer">Ver
@@ -159,8 +162,9 @@
           </p>
           <ul>
             <li>Dados: tenure, engajamento, horas extras, faltas, salario e mudancas de gestor</li>
-            <li>Stack: Python, NumPy e Pandas</li>
+            <li>Stack: Python, NumPy, Pandas, XGBoost e Optuna</li>
             <li>Foco: identificacao de risco de turnover para apoiar RH</li>
+            <li>Resultado atual: ROC-AUC 0.6355, F1 0.2365 e recall 0.4211</li>
           </ul>
           <p class="project-links">
             <a href="https://github.com/dante908/people-analytics-turnover" target="_blank"
