@@ -6,4 +6,4 @@
 - MAPE teste (modelo): 5.9667%
 - MAPE teste (baseline lag7): 9.0547%
 - Relatorios visuais: daily_actual_vs_forecast.png, abs_error_distribution.png, top_series_actual_demand.png
-- Pipeline preparado para execucao semanal e comparacao com baseline.
+- Status: pipeline executado, validado e publicado.
