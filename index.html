@@ -73,12 +73,11 @@
         <article class="project-card">
           <h3>Forecast de Demanda Omnichannel</h3>
           <p>
-            Uma rede varejista perdia margem por ruptura e excesso de estoque. Construí um pipeline semanal de previsão
-            por SKU-loja.
+            Pipeline de previsao de demanda por canal e SKU com backtest dos ultimos 30 dias por serie.
           </p>
           <ul>
-            <li>Dados: 4 anos de vendas, promoções, clima e calendário</li>
-            <li>Stack: Python, XGBoost, Optuna, Airflow</li>
+            <li>Dados: historico diario de demanda, preco e promocao por canal+SKU</li>
+            <li>Stack: Python, NumPy e Pandas</li>
             <li>Foco: previsao de demanda por serie temporal e avaliacao com MAPE</li>
           </ul>
           <p class="project-links">
@@ -93,12 +92,11 @@
         <article class="project-card">
           <h3>Predição de Churn em SaaS B2B</h3>
           <p>
-            Criei um score de churn para priorizar contas críticas e direcionar ações do time de Customer Success com
-            explicabilidade.
+            Score de churn com baseline de classificacao e comparacao entre abordagem estatistica e regra de negocio.
           </p>
           <ul>
-            <li>Dados: uso do produto, tickets, NPS e billing</li>
-            <li>Stack: SQL, Scikit-learn, SHAP, Power BI</li>
+            <li>Dados: fee mensal, seats, tenure, tickets, login, NPS e pagamentos</li>
+            <li>Stack: Python, NumPy e Pandas</li>
             <li>Foco: classificacao de risco de churn e priorizacao de contas</li>
           </ul>
           <p class="project-links">
@@ -113,12 +111,11 @@
         <article class="project-card">
           <h3>Detecção de Fraude em Pagamentos</h3>
           <p>
-            Implementei um sistema híbrido de regras e modelo supervisionado para avaliação de risco em transações quase
-            em tempo real.
+            Motor de risco para pagamentos com score por regra de negocio e ajuste de threshold por F1 em validacao.
           </p>
           <ul>
-            <li>Dados: 18 milhões de transações anonimizadas</li>
-            <li>Stack: LightGBM, FastAPI, Redis, Docker</li>
+            <li>Dados: valor, hora, velocity, risco de device/merchant e historico de chargeback</li>
+            <li>Stack: Python, NumPy e Pandas</li>
             <li>Foco: equilibrio entre deteccao de fraude e falsos positivos</li>
           </ul>
           <p class="project-links">
@@ -133,12 +130,11 @@
         <article class="project-card">
           <h3>Segmentação RFM + Clustering</h3>
           <p>
-            Estruturei segmentação de clientes para campanhas de CRM, combinando métricas RFM com clustering para
-            personalização de ofertas.
+            Segmentacao de clientes com RFM + K-Means para apoiar campanhas e priorizacao de relacionamento.
           </p>
           <ul>
             <li>Dados: histórico de compras, ticket e recência</li>
-            <li>Stack: Python, Pandas, KMeans, Tableau</li>
+            <li>Stack: Python, NumPy e Pandas</li>
             <li>Foco: segmentacao de clientes para acoes de CRM</li>
           </ul>
           <p class="project-links">
@@ -153,12 +149,11 @@
         <article class="project-card">
           <h3>Recomendação de Produtos no E-commerce</h3>
           <p>
-            Desenvolvi motor de recomendação híbrido para melhorar conversão em vitrine e carrinho, com avaliação
-            offline e teste A/B.
+            Recomendador item-item com similaridade cosseno e avaliacao offline via HitRate@10.
           </p>
           <ul>
-            <li>Dados: navegação, pedidos e co-ocorrência de itens</li>
-            <li>Stack: Implicit ALS, Feature Store, MLflow</li>
+            <li>Dados: interacoes implicitas (view, cart, purchase) por usuario e item</li>
+            <li>Stack: Python, NumPy e Pandas</li>
             <li>Foco: recomendacao de produtos com avaliacao offline</li>
           </ul>
           <p class="project-links">
@@ -173,12 +168,11 @@
         <article class="project-card">
           <h3>People Analytics: Risco de Turnover</h3>
           <p>
-            Modelei risco de saída voluntária para apoiar RH em planos de retenção, com painel executivo para
-            acompanhamento mensal.
+            Predicao de risco de turnover com regressao logistica em NumPy e threshold ajustado por validacao.
           </p>
           <ul>
-            <li>Dados: histórico de carreira, avaliações e absenteísmo</li>
-            <li>Stack: CatBoost, SHAP, Streamlit</li>
+            <li>Dados: tenure, engajamento, horas extras, faltas, salario e mudancas de gestor</li>
+            <li>Stack: Python, NumPy e Pandas</li>
             <li>Foco: identificacao de risco de turnover para apoiar RH</li>
           </ul>
           <p class="project-links">
