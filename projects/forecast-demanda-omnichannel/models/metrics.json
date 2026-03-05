@@ -1,0 +1,23 @@
+{
+  "overall_mae": 10.3919,
+  "overall_mape": 7.7737,
+  "series_count": 36,
+  "forecast_horizon_days": 30,
+  "channel_metrics": [
+    {
+      "channel": "loja_fisica",
+      "mae": 8.7186,
+      "mape": 7.4444
+    },
+    {
+      "channel": "marketplace",
+      "mae": 12.6286,
+      "mape": 8.6766
+    },
+    {
+      "channel": "site",
+      "mae": 9.8286,
+      "mape": 7.2002
+    }
+  ]
+}

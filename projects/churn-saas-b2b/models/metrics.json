@@ -1,0 +1,16 @@
+{
+  "roc_auc": 0.7173,
+  "accuracy": 0.6715,
+  "precision": 0.6347,
+  "recall": 0.5375,
+  "f1": 0.5821,
+  "confusion_matrix": {
+    "tp": 172,
+    "tn": 333,
+    "fp": 99,
+    "fn": 148
+  },
+  "model_selected": "logistic_regression",
+  "val_auc_logistic": 0.714,
+  "val_auc_rule": 0.702
+}

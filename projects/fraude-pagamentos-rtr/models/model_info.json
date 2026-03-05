@@ -1,0 +1,13 @@
+{
+  "model": "rule_based_risk_scoring",
+  "selected_threshold": 0.25,
+  "features": [
+    "amount",
+    "hour",
+    "velocity_1h",
+    "device_risk",
+    "merchant_risk",
+    "is_international",
+    "card_age_days"
+  ]
+}

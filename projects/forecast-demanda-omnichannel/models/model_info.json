@@ -1,0 +1,5 @@
+{
+  "method": "seasonal_naive_plus_trend",
+  "seasonality_days": 7,
+  "trend_window_days": 56
+}

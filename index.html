@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio | Data Science</title>
+  <meta name="description"
+    content="Portfólio de Data Science com projetos, experiência e resultados orientados por dados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="hero section reveal">
+    <nav class="nav">
+      <a class="brand" href="#top">Felipe Santana</a>
+      <div class="nav-links">
+        <a href="#projetos">Projetos</a>
+        <a href="#certificacoes">Certificacoes</a>
+        <a href="#skills">Skills</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+
+    <div class="hero-content" id="top">
+      <p class="kicker">Dados • Analytics • Machine Learning</p>
+      <h1>Transformo dados em decisões com impacto real.</h1>
+      <p class="lead">
+        Busco minha primeira oportunidade na area de dados, com abertura para estagio ou posicao junior, e foco em
+        evolucao continua com entregas praticas.
+      </p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#projetos">Ver projetos</a>
+        <a class="btn ghost" href="#contato">Vamos conversar</a>
+      </div>
+    </div>
+
+    <ul class="stats">
+      <li><strong>6</strong><span>projetos de portfolio</span></li>
+      <li><strong>Python + SQL</strong><span>base tecnica aplicada</span></li>
+      <li><strong>100%</strong><span>foco em aprender e evoluir</span></li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="section reveal" id="sobre">
+      <div class="section-title">
+        <p>01</p>
+        <h2>Sobre</h2>
+      </div>
+      <div class="about-card">
+        <p>
+          Estou em transicao para atuar profissionalmente em dados e procuro oportunidade para iniciar como estagiario
+          ou junior.
+          Tenho dedicado meus estudos a analise de dados, modelagem preditiva e desenvolvimento de projetos de ponta a
+          ponta, sempre com foco em resolver problemas de negocio.
+        </p>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projetos">
+      <div class="section-title">
+        <p>02</p>
+        <h2>Projetos</h2>
+      </div>
+      <div class="projects">
+        <article class="project-card">
+          <h3>Forecast de Demanda Omnichannel</h3>
+          <p>
+            Uma rede varejista perdia margem por ruptura e excesso de estoque. Construí um pipeline semanal de previsão
+            por SKU-loja.
+          </p>
+          <ul>
+            <li>Dados: 4 anos de vendas, promoções, clima e calendário</li>
+            <li>Stack: Python, XGBoost, Optuna, Airflow</li>
+            <li>Foco: previsao de demanda por serie temporal e avaliacao com MAPE</li>
+          </ul>
+          <p class="project-links">
+            <a href="projects/forecast-demanda-omnichannel/README.md">Abrir projeto</a> •
+            <a href="projects/forecast-demanda-omnichannel/requirements.txt">Instalar dependencias</a> •
+            <a href="projects/forecast-demanda-omnichannel.zip">Download .zip</a> •
+            <a href="https://github.com/dante908/forecast-demanda-omnichannel" target="_blank"
+              rel="noopener noreferrer">Ver no GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Predição de Churn em SaaS B2B</h3>
+          <p>
+            Criei um score de churn para priorizar contas críticas e direcionar ações do time de Customer Success com
+            explicabilidade.
+          </p>
+          <ul>
+            <li>Dados: uso do produto, tickets, NPS e billing</li>
+            <li>Stack: SQL, Scikit-learn, SHAP, Power BI</li>
+            <li>Foco: classificacao de risco de churn e priorizacao de contas</li>
+          </ul>
+          <p class="project-links">
+            <a href="projects/churn-saas-b2b/README.md">Abrir projeto</a> •
+            <a href="projects/churn-saas-b2b/requirements.txt">Instalar dependencias</a> •
+            <a href="projects/churn-saas-b2b.zip">Download .zip</a> •
+            <a href="https://github.com/dante908/churn-saas-b2b" target="_blank" rel="noopener noreferrer">Ver no
+              GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Detecção de Fraude em Pagamentos</h3>
+          <p>
+            Implementei um sistema híbrido de regras e modelo supervisionado para avaliação de risco em transações quase
+            em tempo real.
+          </p>
+          <ul>
+            <li>Dados: 18 milhões de transações anonimizadas</li>
+            <li>Stack: LightGBM, FastAPI, Redis, Docker</li>
+            <li>Foco: equilibrio entre deteccao de fraude e falsos positivos</li>
+          </ul>
+          <p class="project-links">
+            <a href="projects/fraude-pagamentos-rtr/README.md">Abrir projeto</a> •
+            <a href="projects/fraude-pagamentos-rtr/requirements.txt">Instalar dependencias</a> •
+            <a href="projects/fraude-pagamentos-rtr.zip">Download .zip</a> •
+            <a href="https://github.com/dante908/fraude-pagamentos-rtr" target="_blank" rel="noopener noreferrer">Ver no
+              GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Segmentação RFM + Clustering</h3>
+          <p>
+            Estruturei segmentação de clientes para campanhas de CRM, combinando métricas RFM com clustering para
+            personalização de ofertas.
+          </p>
+          <ul>
+            <li>Dados: histórico de compras, ticket e recência</li>
+            <li>Stack: Python, Pandas, KMeans, Tableau</li>
+            <li>Foco: segmentacao de clientes para acoes de CRM</li>
+          </ul>
+          <p class="project-links">
+            <a href="projects/segmentacao-rfm-clustering/README.md">Abrir projeto</a> •
+            <a href="projects/segmentacao-rfm-clustering/requirements.txt">Instalar dependencias</a> •
+            <a href="projects/segmentacao-rfm-clustering.zip">Download .zip</a> •
+            <a href="https://github.com/dante908/segmentacao-rfm-clustering" target="_blank"
+              rel="noopener noreferrer">Ver no GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Recomendação de Produtos no E-commerce</h3>
+          <p>
+            Desenvolvi motor de recomendação híbrido para melhorar conversão em vitrine e carrinho, com avaliação
+            offline e teste A/B.
+          </p>
+          <ul>
+            <li>Dados: navegação, pedidos e co-ocorrência de itens</li>
+            <li>Stack: Implicit ALS, Feature Store, MLflow</li>
+            <li>Foco: recomendacao de produtos com avaliacao offline</li>
+          </ul>
+          <p class="project-links">
+            <a href="projects/recomendacao-ecommerce/README.md">Abrir projeto</a> •
+            <a href="projects/recomendacao-ecommerce/requirements.txt">Instalar dependencias</a> •
+            <a href="projects/recomendacao-ecommerce.zip">Download .zip</a> •
+            <a href="https://github.com/dante908/recomendacao-ecommerce" target="_blank" rel="noopener noreferrer">Ver
+              no GitHub</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>People Analytics: Risco de Turnover</h3>
+          <p>
+            Modelei risco de saída voluntária para apoiar RH em planos de retenção, com painel executivo para
+            acompanhamento mensal.
+          </p>
+          <ul>
+            <li>Dados: histórico de carreira, avaliações e absenteísmo</li>
+            <li>Stack: CatBoost, SHAP, Streamlit</li>
+            <li>Foco: identificacao de risco de turnover para apoiar RH</li>
+          </ul>
+          <p class="project-links">
+            <a href="projects/people-analytics-turnover/README.md">Abrir projeto</a> •
+            <a href="projects/people-analytics-turnover/requirements.txt">Instalar dependencias</a> •
+            <a href="projects/people-analytics-turnover.zip">Download .zip</a> •
+            <a href="https://github.com/dante908/people-analytics-turnover" target="_blank"
+              rel="noopener noreferrer">Ver no GitHub</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="certificacoes">
+      <div class="section-title">
+        <p>03</p>
+        <h2>Certificacoes</h2>
+      </div>
+      <div class="cert-grid">
+        <article class="project-card">
+          <h3>Google: Foundations - Data, Data, Everywhere</h3>
+          <p>Formacao base em fundamentos de dados e carreira em analytics.</p>
+          <p class="project-links">
+            <a href="certificados/google-foundations-data-data-everywhere.pdf" target="_blank"
+              rel="noopener noreferrer">Ver certificado</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>IBM: Introduction to Artificial Intelligence (AI)</h3>
+          <p>Conceitos de IA aplicados a problemas de negocio e analise de dados.</p>
+          <p class="project-links">
+            <a href="certificados/ibm-introduction-to-artificial-intelligence.pdf" target="_blank"
+              rel="noopener noreferrer">Ver certificado</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Microsoft: Create ML Models in Azure</h3>
+          <p>Treinamento de modelos de machine learning no ecossistema Azure.</p>
+          <p class="project-links">
+            <a href="certificados/microsoft-create-ml-models-azure.pdf" target="_blank" rel="noopener noreferrer">Ver
+              certificado</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>Data Science - Aula Inaugural</h3>
+          <p>Conteudos introdutorios de ciencia de dados e trilhas de especializacao.</p>
+          <p class="project-links">
+            <a href="certificados/data-science-aula-inaugural.pdf" target="_blank" rel="noopener noreferrer">Ver
+              certificado</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>FIAP Nano Course: Big Data & Analytics</h3>
+          <p>Fundamentos de big data, analytics e uso de dados para decisao.</p>
+          <p class="project-links">
+            <a href="certificados/fiap-big-data-analytics.png" target="_blank" rel="noopener noreferrer">Ver
+              certificado</a>
+          </p>
+        </article>
+
+        <article class="project-card">
+          <h3>FIAP Nano Course: Banco de Dados Oracle</h3>
+          <p>Modelagem e fundamentos de banco de dados para ambiente corporativo.</p>
+          <p class="project-links">
+            <a href="certificados/fiap-banco-de-dados-oracle.png" target="_blank" rel="noopener noreferrer">Ver
+              certificado</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="skills">
+      <div class="section-title">
+        <p>04</p>
+        <h2>Stack Técnica</h2>
+      </div>
+      <div class="skills-grid">
+        <div>
+          <h4>Linguagens</h4>
+          <p>Python, SQL, R</p>
+        </div>
+        <div>
+          <h4>ML e Estatística</h4>
+          <p>Scikit-learn, XGBoost, LightGBM, Forecasting, A/B Testing</p>
+        </div>
+        <div>
+          <h4>Data Engineering</h4>
+          <p>Airflow, dbt, Spark, ETL, APIs</p>
+        </div>
+        <div>
+          <h4>Visualização</h4>
+          <p>Power BI, Tableau, Plotly, Streamlit</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contato">
+      <div class="section-title">
+        <p>05</p>
+        <h2>Contato</h2>
+      </div>
+      <div class="contact-card">
+        <p>Interessado em projetos de Data Science, Analytics ou IA aplicada?</p>
+        <a href="mailto:fe.santanaclh7o@gmail.com">fe.santanaclh7o@gmail.com</a>
+        <p class="mini">
+          <a href="https://www.linkedin.com/in/felipe-gabriel-coelho-de-santana-a33b49304" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          •
+          <a href="https://github.com/dante908" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Felipe Santana • Data Science Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
