@@ -3,6 +3,9 @@ set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 PYTHON_BIN="${PYTHON_BIN:-python3}"
+export MPLBACKEND="${MPLBACKEND:-Agg}"
+export MPLCONFIGDIR="${MPLCONFIGDIR:-/tmp/mpl-cache-portfolio}"
+mkdir -p "$MPLCONFIGDIR"
 PROJECTS=(
   "churn-saas-b2b"
   "forecast-demanda-omnichannel"
